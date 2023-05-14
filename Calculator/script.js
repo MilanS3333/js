@@ -8,7 +8,7 @@ const calculate = {
     '*': (firstNumber, secondNumber) => firstNumber * secondNumber,
     '+': (firstNumber, secondNumber) => firstNumber + secondNumber,
     '-': (firstNumber, secondNumber) => firstNumber - secondNumber,
-    '/': (firstNumber, secondNumber) => secondNumber,
+    '=': (firstNumber, secondNumber) => secondNumber,
 }
 
 let firstValue = 0;
@@ -48,6 +48,7 @@ function useOperator(operator) {
         firstValue = currentValue;
     } else {
         const calculation = calculate[operatorValue](firstValue, currentValue);
+        console.log(calculation);
         calculatorDisplay.textContent = calculation;
         firstValue = calculation;
     }
