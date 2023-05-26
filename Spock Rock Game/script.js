@@ -1,3 +1,4 @@
+'use strict';
 const playerScoreEl = document.getElementById('playerscore');
 const playerChoiceEl = document.getElementById('playerchoice');
 const computerScoreEl = document.getElementById('computerscore');

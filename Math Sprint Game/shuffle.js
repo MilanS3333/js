@@ -1,3 +1,4 @@
+'use strict';
 function shuffle(array) {
     let currentIndex = array.length, temporaryValue, randomIndex;
 
